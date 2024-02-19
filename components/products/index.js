@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 import Button from "react-bootstrap/Button";
-=======
 // import Button from "react-bootstrap/Button";
->>>>>>> origin/main
 import Card from "react-bootstrap/Card";
 import Carousel from "react-bootstrap/Carousel";
 import React, { useEffect, useState } from "react";
@@ -29,10 +26,6 @@ const AllProdect = () => {
     <section className="trending-product section" style={{ marginTop: 12 }}>
       <Container>
         <div className="row">
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/main
           {proData.map((product) => (
             <div key={product.id} className="col-lg-3 col-md-6 col-12">
               <Card className="single-product">
@@ -75,8 +68,6 @@ const AllProdect = () => {
 };
 
 export default AllProdect;
-<<<<<<< HEAD
-=======
 // <section class="text-gray-600 body-font">
 //   <div class="container px-5 py-24 mx-auto">
 //     <div class="flex flex-wrap -m-4">
@@ -163,4 +154,3 @@ export default AllProdect;
 //     </div>
 //   </div>
 // </section>
->>>>>>> origin/main

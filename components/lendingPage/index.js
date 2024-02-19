@@ -6,7 +6,6 @@ import CallAction from "./callAction";
 import BannerArea from "./bannerArea";
 import HeadPage from "../layout/HeadPage";
 import ShoppingInfo from "./shoppingInfo";
-import DemoWork from "../demoWork";
 
 function LendingPage() {
   return (
@@ -15,7 +14,6 @@ function LendingPage() {
         <main>
           <HeroAds />
           <TrendingProduct />
-
           <CallAction />
           <BannerArea />
           <ShoppingInfo />

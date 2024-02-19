@@ -1,9 +1,7 @@
 import React from "react";
   
 function ContactPage() {
-<<<<<<< HEAD
   return <div>keshi ho</div>;
-=======
   return (
   <div>keshi ho
     auto save
@@ -12,6 +10,5 @@ function ContactPage() {
     </h5>
   </div>
   );
->>>>>>> origin/main
 }
 export default ContactPage;
