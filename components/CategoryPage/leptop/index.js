@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import Ratings from "./Ratings";
 import { Carousel } from "react-bootstrap";
+import Ratings from "@/components/lendingPage/Ratings";
 
-const TrendingProduct = () => {
-  const [products, setProducts] = useState([]);
+const CategoryPage = () => {
+  const [laptopProducts, setLaptopProducts] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -14,7 +14,10 @@ const TrendingProduct = () => {
           throw new Error("Network response was not ok");
         }
         const data = await response.json();
-        setProducts(data.products.slice(0, 8));
+        const laptopItems = data.products.filter(
+          (product) => product.category.toLowerCase() === "laptop"
+        );
+        setLaptopProducts(laptopItems.slice(0, 8)); // Display only the first 8 laptop items
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -29,7 +32,7 @@ const TrendingProduct = () => {
         <div className="row">
           <div className="col-12">
             <div className="section-title">
-              <h2>Trending Product</h2>
+              <h2>Trending Laptops</h2>
               <p>
                 There are many variations of passages of Lorem Ipsum available,
                 but the majority have suffered alteration in some form.
@@ -38,7 +41,7 @@ const TrendingProduct = () => {
           </div>
         </div>
         <div className="row">
-          {products.map((product, index) => (
+          {laptopProducts.map((product, index) => (
             <div key={index} className="col-lg-3 col-md-6 col-12">
               <div className="single-product">
                 <div className="product-image">
@@ -77,7 +80,7 @@ const TrendingProduct = () => {
                     </li>
                   </ul>
                   <div className="price">
-                    <span>${product.price}</span>
+                    <span>{product.price}</span>
                   </div>
                 </div>
               </div>
@@ -89,4 +92,4 @@ const TrendingProduct = () => {
   );
 };
 
-export default TrendingProduct;
+export default CategoryPage;

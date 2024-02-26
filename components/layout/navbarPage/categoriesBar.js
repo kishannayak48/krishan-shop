@@ -2,9 +2,6 @@ import { productionBrowserSourceMaps } from "@/next.config";
 import Product from "@/pages/product";
 import Link from "next/link";
 import React, { Component, useEffect, useState } from "react";
-import { Button, Card } from "react-bootstrap";
-import react from "react";
-// import { NavDropdown } from "react-bootstrap";
 import { FaChevronRight } from "react-icons/fa";
 
 import { FaFacebookF, FaInstagram, FaSkype, FaTwitter } from "react-icons/fa6";
@@ -19,92 +16,9 @@ function CategoriesBar() {
             <div className="mega-category-menu">
               <span className="cat-button">
                 <i className="lni lni-menu" />
-                All Categories
+                product
               </span>
-              <ul className="sub-category">
-                <li>
-                  <Link href="/product">
-                    Electronics
-                    {/* <i className="lni lni-chevron-right" /> */}
-                    <FaChevronRight />
-                  </Link>
-                  <ul className="inner-sub-category">
-                    <li>
-                      <Link href="product-grids./digitalCamera">
-                        Digital Cameras
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="product-grids.html">Camcorders</Link>
-                    </li>
-                    <li>
-                      <Link href="product-grids.html">Camera Drones</Link>
-                    </li>
-                    <li>
-                      <Link href="product-grids.html">Smart Watches</Link>
-                    </li>
-                    <li>
-                      <Link href="product-grids.html">Headphones</Link>
-                    </li>
-                    <li>
-                      <Link href="product-grids.html">MP3 Players</Link>
-                    </li>
-                    <li>
-                      <Link href="product-grids.html">Microphones</Link>
-                    </li>
-                    <li>
-                      <Link href="product-grids.html">Chargers</Link>
-                    </li>
-                    <li>
-                      <Link href="product-grids.html">Batteries</Link>
-                    </li>
-                    <li>
-                      <Link href="product-grids.html">
-                        Cables &amp; Adapters
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <Link href="product-grids.html">accessories</Link>
-                </li>
-                <li>
-                  <Link href="product-grids.html">Televisions</Link>
-                </li>
-                <li>
-                  <Link href="product-grids.html">best selling</Link>
-                </li>
-                <li>
-                  <Link href="product-grids.html">top 100 offer</Link>
-                </li>
-                <li>
-                  <Link href="product-grids.html">sunglass</Link>
-                </li>
-                <li>
-                  <Link href="product-grids.html">watch</Link>
-                </li>
-                <li>
-                  <Link href="product-grids.html">man’s product</Link>
-                </li>
-                <li>
-                  <Link href="product-grids.html">
-                    Home Audio &amp; Theater
-                  </Link>
-                </li>
-                <li>
-                  <Link href="product-grids.html">
-                    Computers &amp; Tablets{" "}
-                  </Link>
-                </li>
-                <li>
-                  <Link href="product-grids.html">Video Games </Link>
-                </li>
-                <li>
-                  <Link href="product-grids.html">Home Appliances </Link>
-                </li>
-              </ul>
             </div>
-
             {/* End Mega Category Menu */}
             {/* Start Navbar */}
             <nav className="navbar navbar-expand-lg">
@@ -128,43 +42,40 @@ function CategoriesBar() {
                 <ul id="nav" className="navbar-nav ms-auto">
                   <li className="nav-item">
                     <Link
-                      href="index.html"
+                      href="./category"
                       className="active"
                       aria-label="Toggle navigation"
                     >
-                      Home
+                      All product
                     </Link>
                   </li>
                   <li className="nav-item">
                     <Link
                       className="dd-menu collapsed"
-                      href="javascript:void(0)"
+                      href="./category"
                       data-bs-toggle="collapse"
                       data-bs-target="#submenu-1-2"
                       aria-controls="navbarSupportedContent"
                       aria-expanded="false"
                       aria-label="Toggle navigation"
                     >
-                      Pages
+                      category
                     </Link>
                     <ul className="sub-menu collapse" id="submenu-1-2">
                       <li className="nav-item">
-                        <Link href="./about-us">About Us</Link>
+                        <Link href="./about-us">Leptop </Link>
                       </li>
                       <li className="nav-item">
-                        <Link href="faq.html">Faq</Link>
+                        <Link href="faq.html">Mobile</Link>
                       </li>
                       <li className="nav-item">
-                        <Link href="login.html">Login</Link>
+                        <Link href="login.html">Skine care product</Link>
                       </li>
                       <li className="nav-item">
-                        <Link href="register.html">Register</Link>
+                        <Link href="register.html"> grocery items</Link>
                       </li>
                       <li className="nav-item">
-                        <Link href="mail-success.html">Mail Success</Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link href="404.html">404 Error</Link>
+                        <Link href="mail-success.html">home-decoration</Link>
                       </li>
                     </ul>
                   </li>
